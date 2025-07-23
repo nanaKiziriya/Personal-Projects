@@ -1,0 +1,13 @@
+class MergeSortTesting{
+    public static void main(String[] args) {
+        int size = 1000;
+        Random r = new Random();
+        int[] arr = r.ints(10,0,100).toArray();
+        
+        long startTime = System.nanoTime();
+        // Code to be timed
+        long endTime = System.nanoTime();
+        long elapsedTime = endTime - startTime; // in nanoseconds
+
+    }
+}
