@@ -2,7 +2,8 @@ class MergeSortTesting{
     public static void main(String[] args) {
         int size = 1000;
         Random r = new Random();
-        int[] arr = r.ints(10,0,100).toArray();
+        int[] arr2 = r.ints(10,0,size).toArray();
+        int[] arrN = arr2.clone();
         
         long startTime = System.nanoTime();
         
