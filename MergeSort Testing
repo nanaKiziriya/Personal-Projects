@@ -5,9 +5,18 @@ class MergeSortTesting{
         int[] arr = r.ints(10,0,100).toArray();
         
         long startTime = System.nanoTime();
-        // Code to be timed
+        
         long endTime = System.nanoTime();
-        long elapsedTime = endTime - startTime; // in nanoseconds
+        long timeElapsed2Split = endTime - startTime;
+        System.out.println("2-split: " + timeElapsed2Split); // in nanoseconds
+
+
+
+        startTime = System.nanoTime();
+        
+        endTime = System.nanoTime();
+        long timeElapsedNSplit = endTime - startTime;
+        System.out.println("n-split: " + timeElapsedNSplit); // in nanoseconds
 
     }
 }
