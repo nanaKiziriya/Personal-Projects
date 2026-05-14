@@ -1,6 +1,7 @@
-bool sort(int *arr, int n){
-	int temp[n];
-	int *A[2] = {arr,temp}; // non-recursive merge sort between 2 arrays
+template<typename T>
+bool sort(T *arr, int n){
+	T temp[n];
+	T *A[2] = {arr,temp}; // non-recursive merge sort between 2 arrays
 	int NEW=0, NWR=1;
 	for(int i=0, subsect=1; i<log2(n); i++, NEW^=1, NWR^=1, subsect*=2)
 	for(int s=0,n1,n2; s<n; s+=2*subsect){
